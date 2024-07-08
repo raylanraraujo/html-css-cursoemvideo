@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <h1>Trabalhando com listras</h1>
+        <h2>Listras ordenadas</h2>
+            <ol type="1" start="1"><!--tag para criar uma lista ordenada (ou Ordered List). O parâmetro "type" nos diz como vai ser a identificado a sequência dos números (podendo ser: "1","A", "a", "I" e "i") e o parâmetro "start" nos informa qual será o pontapé-->
+                <li>Acordar</li> <!--tag para informar o item da lista (ou List item). Não é obrigado colocar a tag de fechamento </li>-->
+                <li>Ligar para João</li>
+                <li>Tomar café</li>
+                <li>Escovar os dentes</li>
+                <li>Ir para a faculdade</li>
+                <li>Almoçar</li>
+                <li>Ir para o trabalho</li>
+                <li>Voltar para casa</li>
+                <li>Jantar</li>
+                <li>Dormir</li>
+            </ol>
+
+        <h2>Listras não ordenadas</h2>
+            <ul> <!-- Nesse caso, para o parâmetro "type"dessa tag temos apenas três opcões: "circle", "disc" (padrão),"square"-->
+                <li>pão</li>
+                <li>leite</li>
+                <li>tomate</li>
+                <li>alface</li>
+                <li>menteiga</li>
+                <li>arroz</li>
+                <li>feijão</li>
+            </ul>
+
+        <h2>Minhas linguagens favoritas</h2>
+            <ol type="1" start="1">
+                <li>Antigas</li>
+                    <ol type="a" start="1">
+                        <li>Clipper</li>
+                        <li>Visual Basic</li>
+                        <li>Fortran</li>
+                        <li>Delphi</li>
+                    </ol>
+
+                <li>Novas</li>
+                    <ol type="a" start="5">
+                        <li>PHP</li>
+                        <li>Python</li>
+                        <li>JavaScrip</li>
+                        <li>Kotlin</li>
+                    </ol>
+            </ol>
+
+        <h2>Lista dos meus jogos favoritos</h2>
+            <ul>
+                <li>Nintendinho</li>
+                <ol type="1" start="1">
+                    <li>Mario Bros</li>
+                    <ul type="square">
+                        <li>Super Mario Bros 3</li>
+                        <li>Mario: Lost Levels</li>
+                    </ul>
+                    <li>Ninja Gaiden</li>
+                    <ul type="square">
+                        <li>Ninja Gaiden III</li>
+                    </ul>
+                </ol>
+
+                <li>Super Nintendo</li>
+                <ol type="1" start="1">
+                    <li>Super Mario World</li>
+                    <li>Donkey Kong</li>
+                    <ul type="square">
+                        <li>Donkey Kong Country III</li>
+                        <li>Diddy's Kong Quest</li>
+                    </ul>
+                </ol>
+
+                <li>Playstation 1</li>
+                <ol type="1" start="1">
+                    <li>Final Fantasy</li>
+                        <ul type="square">
+                            <li>Final Fantasy VII</li>
+                            <li>Final Fantasy IX</li>
+                        </ul>
+
+                    <li>Castlevania</li>
+                        <ul type="square">
+                            <li>Simphony of the Night</li>
+                        </ul>
+                </ol>
+            </ul>
+
+        <h2>Lista de Definições</h2>
+            <dl>
+                <dt>HTML</dt>
+                    <dd>Linguagem de marcação para a criação do conteúdo de um site. </dd>
+                <dt>CSS</dt>
+                    <dd>Linguagem de marcação para a criação do design de um site.</dd>
+                <dt>JavaScript</dt>
+                    <dd>Linguagem de programação para a criação de interação de um site.</dd>
+            </dl>
+<!--o uso das tags <dt> e <dd> nos facilitam muito com os mecanismos de busca. O google dá preferência e valor aos sites que tem lista de definição no seu interior-->
+    </body>
+</html>

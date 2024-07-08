@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formatação de Textos</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+        <style> 
+            mark{  
+                background-color: limegreen; 
+            }
+        </style>
+        <!--Poderíamos configuar a cor do marcador de texto na própria tag <mark> que estava no código da seguinte maneira <mark style="background-color: rgb(21, 189, 211);">, porém caso houvesse de aparecer outra marcação de texto, seria preciso colocar toda a configuração novamente. Criando essa folha de estilo, todas as marcações que venham a surgir ficarão na mesma formatação-->
+    </head>
+    <body>
+        <h1>Principais formatações</h1>
+            <h2>Negrito / Destaque</h2>
+            <p>Nessa frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt; &lt;/b&gt;, mas é uma tag não semantica.</p> 
+            <p>Nesta frase temos um <strong>termo em destaque</strong> usando a tag &lt;strong&gt; &lt;/strong&gt;, mas nesse caso há semâtica.</p>
+
+            <h2>Itálico/ Ênfase</h2>
+            <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag &lt;i&gt; &lt;/i&gt; (não semântica)</p> <!--Apertar esse conjunto de teclas (CTRL + SHIFT + TECLA "P") auxilia para colocar termos selecionados dentro de tags sem precisar escrevê-las. So apertar o conjunto de teclas, selecionar a opção "Envolver com Abreviação" e depois informar qual a tag que você deseja que seja colocada (nesse caso foi a letra "i")-->
+            <p>Nesta frase, temos um <em>termo em ênfase</em>  usando a tag &lt;em&gt; &lt;/em&gt; (semântico)</p>
+
+            <h2>Texto marcado</h2>
+            <p>Podemos criar também <mark>um texto marcado</mark> usando a tag &lt;mark&gt; &lt;/mark&gt;</p>
+            <p>E no outro parágrafo, temos <mark>outro texto marcado</mark> no final.</p>
+            
+            <h2>Texto grande e texto pequeno</h2>
+            <p>Estamos criando <big>um texto grande</big> e <small>um texto pequeno</small> nesse parágrafo usando as tags &lt;big&gt; &lt;/big&gt; (apesar de ainda funcionar, ela aparecer em vermelho no Virtual Code pois já está descontinuada) e as tags &lt;small&gt; &lt;/samll&gt;</p>
+
+            <h2>Texto deletado</h2>
+            <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado usando as tags &lt;del&gt; &lt;/del&gt;.</p>
+
+            <h2>Texto inserido</h2>
+            <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois usando as tags &lt;ins&gt; &lt;/ins&gt; (tem sentido semântico).</p>
+            <p>Existe também o <u>sublinhado</u> com a tag &lt;u&gt; &lt;/u&gt;, mas não possui sentido semântico.</p>
+
+            <h2>Texto sobrescrito &lt;sup&gt; &lt;/sup&gt;</h2>
+            <p>Para inserir coisas do tipo x<sup>2</sup>+3</p>
+
+            <h2>Texto subescrito &lt;sun&gt; &lt;/sub&gt;</h2>
+            <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+
+
+    </body>
+</html>

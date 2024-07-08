@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Outras formatações</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <h1>Outras formatações</h1>
+            <h2>Código Fonte</h2>    
+                <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript. 
+                <p>Para deixar a fonte nesse estilo monoespaçada é necessário envelopar o termo de interesse com a tag &lt;code&gt; &lt;/code&gt;.</p>
+                <p>Mas vale ressaltar que essa tag não deixa o código com indentação, ou seja, fica tudo como se estivesse escrito na mesma linha como podemos ver abaixo.</p>
+                
+                <code>
+                num = int(imput('Digite um número'))
+                if num % 2 == 0: 
+                    print(f'O número {num} é PAR)
+                else
+                    print(f'O número {num} é ÍMPAR)
+                print('Fim do programa')
+                </code>
+
+                <p>Para resolver isso, podemos combinar a tag CODE colocando a <strong>tag &lt;pre&gt; &lt;/pre&gt</strong>; antes e depois dela para ficar escrito com a indentação</p>
+                <pre>
+                <code>
+                num = int(imput('Digite um número'))
+                if num % 2 == 0: 
+                    print(f'O número {num} é PAR)
+                else
+                    print(f'O número {num} é ÍMPAR)
+                print('Fim do programa')
+                </code>
+                </pre>
+
+            <h2>Citações simples &lt;q&gt; &lt;/q&gt;</h2>
+                <p>Como diria o pai de um amigo <q>o computador é um burro muito rapido</q>. Para o texto aarecer as aspas e apresentar valor semântico de citação simples deve-se usar a tag q.</p>
+
+                <h2>Citações completas</h2>
+                <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+                <blockquote cite="https://www.amazon.com.br/Html-Xhtml-css-Para-Leigos/dp/8576086972"> <!--Dentro da tag blockquote pode ser inserido um parâmetro chamado "cite" (citando). Ele não altera em nada o documento, mas os mecanismos de busca vão saber que o documento está se referindo a uma fonte externa-->
+                    A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem blocos de texto.
+                </blockquote>
+
+            <h2>Abreviações &lt;abbr&gt; &lt;/abbr&gt;</h2> 
+            <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+            <p>Dentro da tag abbr aparece a parte de incluir um título para a abreveação e isso vai aparecer quando colocar o mouse encima</p>
+
+            <h2>Texto invertido &lt;bdo&gt; &lt;/bdo&gt;</h2>
+            <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+            <p>dentro da tag tem o parâmetro que você precisa informar o sentido da esquerda para direita (ltr) ou direita para esquerda (rtl).</p>
+    </body>
+</html>

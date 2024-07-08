@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body{
+    background-color: #d6fde9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #1e402f;
+}
+
+h1#principal{ 
+    /*
+    nesse eletor eu poss oespecificar que é o H! ou posso simplesmente colocar o identificador #PRINCIPAL que o estilo vai saber de quem eu estou me referindo Todo que é ID no HTML é # no CSS. Tuo que em HTM é class, no CSS é . (ponto)
+    
+    ID (html) = # (CSS) 
+    CLASS (html) = . (CSS)
+
+    no documento só pode ter um elemento com ID. Todos os outros serão classifcados com CLASS.
+    */
+    text-align: center;
+    background-color: #3c805e;
+    color: white /* essa cor da fonte é sobreposta pela cor do ID definido mais acima. As configurações de ID sobrepões as configurações das CLASS*/
+}
+
+h2{
+    color: #3c805e;
+}
+
+.basico{
+color: #3c805e;
+}
+
+.intermediario{
+color: #80793c
+}
+
+.avancado{
+color: #803c3c 
+}
+
+.destaque{
+    background-color: #c5c56070;
+}

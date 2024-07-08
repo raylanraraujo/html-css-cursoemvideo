@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trabalhando com links</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <h1>Trabalhando com links</h1> 
+        
+        <h2>Usando links externos</h2>
+            <p>Você pode acessar o <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público do github do Gustavo Guanabara</a>.</p>
+            <p>Você pode acessar o <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal do Curso em vídeo no Youtube. </a></p>
+            <!--A tag <a> (âncora)...-->
+            <!--O parametro "href" da tag <a> tem a função de direcionar o usuário para o local desejado-->
+            <!--O parametro "target" da tag <a> e o valor "_blank" tem a função de abrir uma nova aba ao clicar no link-->
+            <!--O parametro "rel" da tag <a> tem a função de indicar ao navegador que trata-se de algo externo do site.-->
+            <br>
+        <h2>Usando links internos</h2>
+        <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" target="_self"
+            rel="next">segunda página</a></p>
+            <!--Na tag <a>, quando se faz um link interno, não é preciso indicar a URL inteira. Posso simplesmente dizer a página do site que eu quero que seja direionada, mas para isso funcionar, as páginas tem que estar dentro da mesma pasta.-->
+            <!--O atalho "CTRL + ESPAÇO" no parâmetro "href" nos auxilia mostrandos as páginas que se encontram dentro da mesma pasta tag <a> -->       
+            <!--O parametro "target" da tag <a> e o valor "_self" tem a função de informar que o link é para abrir na mesma página-->
+
+        <p>Você também pode acessar nossa <a href="noticias/pag003.html" rel="next">página de notícias.</a></p>
+
+        <h2>Links para download</h2>
+        <ul>
+            <li><a href="livro/meulivro.pdf" target="_blank">Baixar o livro pdf</a></li> <!-- -->
+            <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Baixar o livro compactado em ZIP</a></li>
+        </ul>
+    </body>
+</html>
