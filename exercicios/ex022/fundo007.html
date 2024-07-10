@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alinhamento verical</title>
+        <style>
+            #container{
+                position: relative; /* por padão, todo box em HTML tem o posicionamento "RELATIVE" */
+                height: 96vh;
+                padding: 10px;
+                background-color: purple;
+                background-image: url(imagens/target001.png);
+                background-size: 100% 100%; /*essa configuração faz com que a imagem ocupe o espaço todo da DIV*/
+            }
+
+            #conteudo{
+                height: 200px;
+                width: 400px;
+                background-color: yellow;
+
+                background-image: url(imagens/target001.png);
+                background-size: 100% 100%; /*essa configuração faz com que a imagem ocupe o espaço todo da DIV*/
+
+                position: absolute; /*com essa configuração podemos configurar outras dois parâmetros muito importantes LEFT e TOP*/
+
+                left: 50%; 
+                top: 50%; /*essas duas configurações LEFT e TOP colocam o canto superior esquerdo da imagem amarela no centro da DIV*. Mas o centro da imagem nã0 está centralizada no centro da página. PAra isso é preciso fazer uma TRANSFORM.*/
+
+                transform: translate(-50%, -50%);
+                /*
+                TRANSFORM = ela permite mexer em qualquer caixa e tem várias opções.
+                TRNASLATE = permite mexer o componente para direita e para cima (ou para esquerda e para baixo caso seja colocado valores negativos). Aceita valores positivos e negativos. Mexendo valores negativos de 50% permite a 
+                */
+            }
+        </style>
+    </head>
+    <body>
+        <section id="container">
+            <article id="conteudo">
+
+            </article>
+        </section>
+        
+    </body>
+</html>
