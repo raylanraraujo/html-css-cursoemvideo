@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --fonte1: "Poppins", sans-serif;
+}
+
+
+header{
+    background-color: black;
+    color: white;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 30px;   
+    text-align: center  ;
+}
+
+header > h1{
+    font-size: 4em;
+    font-variant: small-caps;
+}
+
+header > p {
+    
+}
+
+body{
+    font-family: var(--fonte1);
+}
+
+section{
+    padding-left: 30px;
+}
+
+section.cantado{
+    
+}
+
+section.falado{
+
+}
+
+p{
+    line-height: 1.5em;
+    padding-bottom: 30px;
+}
+
+footer{
+    text-align: center;
+}
+footer > div {
+    height: 300px;
+    padding-top: 0px;
+    background-image: url(../imagens/tres-poemas-de-vinicius-de-moraes_2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+footer > p {
+    padding: 0px;
+}
