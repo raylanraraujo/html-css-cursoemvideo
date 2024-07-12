@@ -27,20 +27,41 @@ header{
 header > h1{
     font-size: 10vw;
     font-variant: small-caps;
+    text-shadow: 5px  5px 5px rgba(255, 255, 255, 0.5);
 }
 
 header > p {
     padding-top: 0px;
+    text-shadow: 8px 8px 8px rgba(255, 255, 255, 0.315);
+    font-weight:normal;
 }
 
 body{
     font-family: var(--fonte1);
 }
 
+div.video{
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;  
+
+    padding-bottom: 58.1%; /*ao mexer nessa porcentagem é possível alterar a quantidade de borda preta que fica aparecendo no vídeo quando se dá play*/
+    position: relative; 
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%; /*distancia do quadrado do  vídeo para o topo do quadrado destinado a ele no wireframe*/
+    left: 10%; /*distância do quadrado do vídeo para a borda esquerda do quadrado a ele destinado no wireframe*/
+     
+    /*por está absoluto, conseguiremos configurar a altura e largura do vídeo*/
+    width: 80%;
+    height: 90%;
+}
 main{
    min-width: px;
-   max-width: 1000px;
-   margin: auto; 
+   max-width: 2000px;
+   margin: auto;    
     
 }
 
@@ -62,9 +83,11 @@ p{
     font-size: 2vw;
 }
 
-main > div{
-   
+div > img{
+    width: 80vw;
+    margin-left: 40px;
 }
+
 footer{
     text-align: center;
     padding: 0px;
