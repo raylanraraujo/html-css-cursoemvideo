@@ -14,7 +14,10 @@
 
 header{
     background-color: black;
-    color: white;
+    background-image: url(../imagens/imagem1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
     margin-bottom: 30px;
     padding-top: 30px;
     padding-left: 30px;   
@@ -22,16 +25,23 @@ header{
 }
 
 header > h1{
-    font-size: 4em;
+    font-size: 10vw;
     font-variant: small-caps;
 }
 
 header > p {
-    
+    padding-top: 0px;
 }
 
 body{
     font-family: var(--fonte1);
+}
+
+main{
+   min-width: px;
+   max-width: 1000px;
+   margin: auto; 
+    
 }
 
 section{
@@ -49,18 +59,18 @@ section.falado{
 p{
     line-height: 1.5em;
     padding-bottom: 30px;
+    font-size: 2vw;
 }
 
+main > div{
+   
+}
 footer{
     text-align: center;
+    padding: 0px;
+    margin-top: 10px;
 }
-footer > div {
-    height: 300px;
-    padding-top: 0px;
-    background-image: url(../imagens/tres-poemas-de-vinicius-de-moraes_2.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-}
+
 
 footer > p {
     padding: 0px;
