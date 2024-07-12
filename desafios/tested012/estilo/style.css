@@ -11,33 +11,33 @@
     --fonte1: "Poppins", sans-serif;
 }
 
+body{
+    font-family: var(--fonte1);
+}
 
 header{
+    width: 90vw;
     background-color: black;
     background-image: url(../imagens/imagem1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: black;
-    margin-bottom: 30px;
-    padding-top: 30px;
-    padding-left: 30px;   
-    text-align: center  ;
+    padding: 30px;
+      
+    text-align: center;
 }
 
 header > h1{
-    font-size: 10vw;
+    font-size: 12vw;
     font-variant: small-caps;
     text-shadow: 5px  5px 5px rgba(255, 255, 255, 0.5);
 }
 
 header > p {
+    font-size: 3vw;
     padding-top: 0px;
     text-shadow: 8px 8px 8px rgba(255, 255, 255, 0.315);
     font-weight:normal;
-}
-
-body{
-    font-family: var(--fonte1);
 }
 
 div.video{
