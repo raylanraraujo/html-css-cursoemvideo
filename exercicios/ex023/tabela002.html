@@ -10,9 +10,24 @@
             }
 
             table{
+                position: relative; /* é necessário colocar essa definição para poder fazer o efeito do título das colunas quando dá scroll na página*/
                 width:  500px;
                 border-collapse: collapse;
+            }
 
+            caption{
+                font-size: 1.5em;
+                font-weight: bold;
+                padding: 10px;
+                background-color: lightgrey;
+            }
+
+            tbody > tr:nth-child(odd){ /* odd = 2n - 1 */
+                background-color: lightgrey;
+            }
+
+            tbody > tr:nth-child(even){ /*even = 2n */
+                background-color: white;
             }
 
             td , th {
@@ -23,9 +38,16 @@
             td.num{
                 text-align: right;
             }
+
             thead , tfoot{
                 background-color: gray;
                 color: white;
+            }
+
+            thead > tr > th {
+                position: sticky; /*é preciso colocar essa definição para fazer com que o título fique fixo no teto da página quando se dá scroll*/
+                top: -1px; /*isso sinaliza a posicão de onde ficará o título. Foi colocado esse valor por o "zero" estava deixando uma linha enre o topo da página e o conteúdo*/
+                background-color: gray; /*para dar cor de fundo ao conteúdo fixado. Bom colocar a mesma cor que se vinha sendo usado*/
             }
 
 
@@ -39,6 +61,7 @@
             ANATOMIA PARA TABELAS GRANDES
 
                 TABLE
+                    CAPPTION
                     THEAD
                         tr, td, th 
 
@@ -52,9 +75,16 @@
         -->
 
         <table>
+            <caption>
+                População das Unidades Federativas
+            </caption>
+             
             <thead>
-                <th>Estado</th> 
-                <th>População</th>
+                <tr>
+                    <th scope="col">Estado</th> 
+                    <th scope="col" style="width: 50px;">População</th> 
+                </tr>
+              
             </thead>
 
             <tbody>
@@ -196,10 +226,30 @@
 
             <tfoot>
                 <tr>
-                    <th>Total de Habitantes</th>
+                    <th scope="row">Total de Habitantes</th>
                     <td class="num"><strong>210.147.125</strong></td>
                 </tr>
             </tfoot>
         </table>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur cupiditate qui voluptate assumenda tempore, blanditiis maxime odio perferendis. Iure ipsum deleniti in alias fugit voluptates reprehenderit dolorem ullam rerum vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veritatis ea mollitia perferendis enim! Incidunt, dolor dignissimos veniam delectus nobis non! Laborum, aliquam vitae eius asperiores architecto nobis ipsam autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ducimus quidem quos molestias atque voluptas earum exercitationem dolores fugit ratione excepturi molestiae, minus ex, eos odio, culpa facere dolorum cum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid explicabo optio, nihil eaque iure ipsum tempora ipsa minima pariatur nisi, facilis ea laborum nesciunt, delectus consectetur repellendus magnam cumque! Beatae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quo iure debitis doloribus quas repudiandae nesciunt facere! Neque eos velit accusantium voluptatum. Aspernatur totam sit voluptate, vero exercitationem accusantium fugit.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur cupiditate qui voluptate assumenda tempore, blanditiis maxime odio perferendis. Iure ipsum deleniti in alias fugit voluptates reprehenderit dolorem ullam rerum vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veritatis ea mollitia perferendis enim! Incidunt, dolor dignissimos veniam delectus nobis non! Laborum, aliquam vitae eius asperiores architecto nobis ipsam autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ducimus quidem quos molestias atque voluptas earum exercitationem dolores fugit ratione excepturi molestiae, minus ex, eos odio, culpa facere dolorum cum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid explicabo optio, nihil eaque iure ipsum tempora ipsa minima pariatur nisi, facilis ea laborum nesciunt, delectus consectetur repellendus magnam cumque! Beatae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quo iure debitis doloribus quas repudiandae nesciunt facere! Neque eos velit accusantium voluptatum. Aspernatur totam sit voluptate, vero exercitationem accusantium fugit.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur cupiditate qui voluptate assumenda tempore, blanditiis maxime odio perferendis. Iure ipsum deleniti in alias fugit voluptates reprehenderit dolorem ullam rerum vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veritatis ea mollitia perferendis enim! Incidunt, dolor dignissimos veniam delectus nobis non! Laborum, aliquam vitae eius asperiores architecto nobis ipsam autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ducimus quidem quos molestias atque voluptas earum exercitationem dolores fugit ratione excepturi molestiae, minus ex, eos odio, culpa facere dolorum cum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid explicabo optio, nihil eaque iure ipsum tempora ipsa minima pariatur nisi, facilis ea laborum nesciunt, delectus consectetur repellendus magnam cumque! Beatae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quo iure debitis doloribus quas repudiandae nesciunt facere! Neque eos velit accusantium voluptatum. Aspernatur totam sit voluptate, vero exercitationem accusantium fugit.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur cupiditate qui voluptate assumenda tempore, blanditiis maxime odio perferendis. Iure ipsum deleniti in alias fugit voluptates reprehenderit dolorem ullam rerum vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veritatis ea mollitia perferendis enim! Incidunt, dolor dignissimos veniam delectus nobis non! Laborum, aliquam vitae eius asperiores architecto nobis ipsam autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ducimus quidem quos molestias atque voluptas earum exercitationem dolores fugit ratione excepturi molestiae, minus ex, eos odio, culpa facere dolorum cum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid explicabo optio, nihil eaque iure ipsum tempora ipsa minima pariatur nisi, facilis ea laborum nesciunt, delectus consectetur repellendus magnam cumque! Beatae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quo iure debitis doloribus quas repudiandae nesciunt facere! Neque eos velit accusantium voluptatum. Aspernatur totam sit voluptate, vero exercitationem accusantium fugit.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur cupiditate qui voluptate assumenda tempore, blanditiis maxime odio perferendis. Iure ipsum deleniti in alias fugit voluptates reprehenderit dolorem ullam rerum vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veritatis ea mollitia perferendis enim! Incidunt, dolor dignissimos veniam delectus nobis non! Laborum, aliquam vitae eius asperiores architecto nobis ipsam autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ducimus quidem quos molestias atque voluptas earum exercitationem dolores fugit ratione excepturi molestiae, minus ex, eos odio, culpa facere dolorum cum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid explicabo optio, nihil eaque iure ipsum tempora ipsa minima pariatur nisi, facilis ea laborum nesciunt, delectus consectetur repellendus magnam cumque! Beatae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quo iure debitis doloribus quas repudiandae nesciunt facere! Neque eos velit accusantium voluptatum. Aspernatur totam sit voluptate, vero exercitationem accusantium fugit.
+        </p>
     </body>
 </html>
