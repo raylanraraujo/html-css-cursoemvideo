@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse; /*isso configura a separação das células da tabela. O padrão é "sEPERATE".*/
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center; /*ALINHAR HORIZONTALMENTE os dados dentro da célula*/
+            vertical-align: middle; /*ALINHAR VERTICALMENTE os dados dentro da célula.*/
+        }
+
+        .numero{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+    HIERARQUIA DE TABELAS (simples)
+    TABLE = tabela 
+        TABLE ROW = linha da tabela <tr> </tr>
+            TABLE HEADER = cabeçalho da tabela
+            TABLE DATA = dado da tabela <td> </td>
+
+            O w3c colocoou como opcional o fechamento das tags </tr> e </td>;
+
+            Se a hierarquia dos elementos não forem obedecidas, os dados serão colocados ou antes ou depois da tabela.
+    -->
+    <table> <!-- Abertura de tag para a criação da tabela-->
+        <tr> <!-- criaçao da PRIMEIRA linha da tabela-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+
+        <tr> <!-- criaçao da SEGUNDA linha da tabela-->
+            <td>A2</td>
+            <td>B2</td>
+            <td class="numero">C2</td>
+        </tr>
+
+        <tr> <!-- criaçao da TERCEIRA linha da tabela-->
+            <td>A3</td>
+            <td>B3</td>
+            <td class="numero">C3</td>
+        </tr>
+
+        <tr> <!-- criaçao da QUARTA linha da tabela-->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>
