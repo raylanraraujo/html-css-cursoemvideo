@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       
+    </style>
+</head>
+<body>
+<h1>Meu primeiro formulário</h1>
+
+<form action="cadastro.php" autocomplete="off"> <!--pode desabilitar a opção de preenchimento com a configuração "autocomplete". A função "action" informa para onde o dado vai ser enviado após aperter o 'ok'-->
+<p>
+    <label for="inome"> <!--a utilidade é criar uma relação entre o label e o input.-->
+        Nome:
+    </label> 
+    <input type="text" name="nome" id="inome">
+</p> 
+
+<p>
+    <label for="isobrenome">
+        Sobrenome:
+    </label> 
+    <input type="text" name="sobrenome" id="isobrenome">
+</p> 
+
+<input type="submit" value="Enviar">
+</form>
+
+<br>
+<h1>Meu formulário de fixação de formulário</h1>
+
+<form action="cadastro.php" autocomplete="off">
+    <p>
+        <label for="inome1">Nome:</label>
+        <input type="text" name="nome" id="inome1">
+    </p>
+
+    <p>
+        <label for="isobrenome1">Sobrenome:</label> 
+        <input type="text" name="sobrenome1" id="isobrenome1">
+    </p>
+
+    <input type="submit" value="Enviar">
+</form>
+</body>
+</html>
+
+<h3>exitem dois metodos de envio de dados</h3>
+<p>1) Get (padrão)</p>
+    <p>Os dados enviados nos formulários aparecem na url. Quando os dados não forem dados sensíveis (como pesquisas do google, nome, sobrenome). Dessa forma, é possível compartilhar a url.</p>
+
+<p> 2) Post</p>
+    <p>Não aparece na url as informações que foram inseridas no formulário. Mas isso não quer dizer que esse método protege o dado enviado. Usado com dados sensíveis, dados com mais de 3mil caracteres. É possível verificar o que foi enviado Inspecionar > Network > Headers</p>
