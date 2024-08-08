@@ -4,44 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css">
     <style>
-        /* declarações gerais */
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        html , body {
-            width: 100vw;
-            height: 100vh;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #233eff;
-            background-size: contain;
-            background-repeat: no-repeat;
-            
-        }
-
-        h1 {
-            color: white;
-            text-shadow: 2px 2px 0px #1526a7;
-            padding: 10px;
-        }
-
-        /* declarações retrato (portrait) */
-        @media screen and (orientation: portrait) {
-            body {
-                background-image: url(../imagens/cev-portrait.jpg);
-                background-position: center bottom;
-            }
-        }
-
-        /* declarações paisagem (landscape) */
-        @media screen and (orientation: landscape) {
-            body {
-                background-image: url(../imagens/cev-landscape.jpg);
-                background-position: left bottom;
-            }
-        }
+        /* 
+        Podemos deixar as definições de estilo dentro do arquivo html na parte de STYLE, mas acaba poluindo muito o arquivo. Por esta razão é interessante que se crie um estilo CSS para colocar os estilos dentro dele. Não é obrigatório colocar cada MEDIA QUERY numa folha de estilo exclusiva. Se as configurações forem pequenas podemos deixar todas numa mesma folha de estilo mas é preciso especificar do que se trata cada configuração como foi feito no exemplo deste exercício.
+        */
     </style>
 </head>
 
