@@ -4,12 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Menu responsivo</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> <!-- Copiado do site da Google -->
+        <link rel="stylesheet" href="estilos/style.css">
     </head>
     <body>
         <header>
             <h1>Meu site</h1>
-
-            <menu>
+            <span id="icnburger" class="material-icons" onclick="clickMenu()">menu</span> <!-- Copiado do site da google a alterado o 'face' para 'menu' que é o ícone de interesse. Foi inserido o comando em JavaScript "onclick ="clickMenu()"-->
+            <menu id="itens">
                 <ul>
                     <li><a href="#">Opção 1</a></li>
                     <li><a href="#">Opção 2</a></li>
@@ -22,7 +25,7 @@
         
         <main>
             <article>
-                <h2>Testando media query</h2>
+                <h2>Testando Media Queries</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, obcaecati veniam quas nulla sed odit voluptate quos quibusdam culpa provident consectetur repudiandae sunt nam, laudantium voluptatem! Doloribus, laboriosam. Provident, qui. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus itaque quaerat cumque officia. Aperiam minus ad, quod repudiandae magnam obcaecati. Facilis culpa autem enim aperiam sunt officia exercitationem eveniet! Assumenda.</p>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellat a alias expedita quo laudantium laborum fugiat unde. Beatae, inventore facere. Consequuntur inventore voluptatibus dignissimos eligendi? Provident eaque odit cupiditate. lorem</p>
@@ -30,5 +33,22 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sequi? </p>
             </article>
         </main>
+    <script>
+        /*
+        function clickMenu() {
+            itens.style.display = 'block'
+        }
+            se deixar somente assim, o menu será aberto, mas não fecha. Por isso é preciso criar uma condicional.
+        */
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } 
+            else {
+                itens.style.display = 'block'
+            }
+        }
+        
+    </script>
     </body>
 </html>
