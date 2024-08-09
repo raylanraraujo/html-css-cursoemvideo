@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/*
+Typical Device Breakpoints
+--------------------------
+    Dispositivos muito pequenos (celulares): até 600px
+        @media only screen and (max-width: 600px) {...}
+
+    Dispositivos pequenos (tablets portrait / celulares grandes): de 600px para cima (até 768px)
+        @media only screen and (min-width: 600px) {...}
+
+    Dispositivos médios (tablets landscape): 768px para cima (até 992px)
+        @media only screen and (min-width: 768px) {...}
+
+    Dispositivos largos (desktops/ laptops): 992px para cima (até 1200px)
+        @media only screen and (min-width: 992px) {...}
+
+    Dispositivos extra largos (grandes laptops e monitores): 1200px para cima 
+        @media only screen and (min-width: 1200px) {...}
+*/
+
+@media screen and (min-width: 768px)  {
+    header > span#icnburger {
+        display: none;
+    }
+
+    header > menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}

@@ -6,9 +6,11 @@
         <title>Menu responsivo</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"> <!-- Copiado do site da Google -->
-        <link rel="stylesheet" href="estilos/style.css">
+        <link rel="stylesheet" href="estilos/style.css"> <!-- media query para mobile first -->
+        <link rel="stylesheet" href="estilos/media-query.css">
+
     </head>
-    <body>
+    <body onresize="mudouTamanho()">
         <header>
             <h1>Meu site</h1>
             <span id="icnburger" class="material-icons" onclick="clickMenu()">menu</span> <!-- Copiado do site da google a alterado o 'face' para 'menu' que é o ícone de interesse. Foi inserido o comando em JavaScript "onclick ="clickMenu()"-->
@@ -49,6 +51,14 @@
             }
         }
         
+        function mudouTamanho() { /* ess comando é para que o menu continue aparecendo abrindo ou fechando o Menu hambuerguer */
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            }
+            else {
+                itens.style.display = 'none'
+            }
+        }
     </script>
     </body>
 </html>
