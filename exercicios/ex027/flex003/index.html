@@ -9,14 +9,17 @@
                 background-color: lightsalmon;
 
                 display: flex; /*isso configura o container como flexivel*/
-                flex-direction: row;
-                flex-wrap: nowrap;
+                
+
+                flex-flow: row wrap;
+                /* Shorthand que une as configuraçoes de "flex-direction: row;" e "flex-wrap: nowrap;" */
             }
 
             div.item{
                 background-color: lightblue;
                 border: 1px solid black;
                 text-align: center;
+                flex: auto;
 
                 
                 
