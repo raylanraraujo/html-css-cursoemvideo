@@ -24,11 +24,13 @@
                 /*
                 flex-basis: define o tamanho inicial que um item deve ter antes que o espaço ao seu redor seja distribuído.
 
-                flex-grow: é a propriedade que define quanto se o item pode aumentar. Por padrão o valor é 0, ou seja, o item não pode aumentar/ crescer. 
+                flex-grow: é a propriedade que define quanto se o item pode aumentar. Por padrão o valor é 0, ou seja, o item não pode aumentar/ crescer. o Valor de 1 para essa configuração se for NOWRAP, caso contrário o conteúdo se quebra.
 
                 flex-shrink: é a propriedade que informa se o item pode encolher. Por padrão o valor é 1 (padrão: 1), ou seja, significa que o item pode encolher SIM. Caso seja colocado o valor 0, o item não pode encolher.
 
-                *caso seja de interesse que o item possua uma elasticidade, nele é configurado o valor de 1 para as duas propriedades (flex-grow e flex-shrink)
+                *caso seja de interesse que o item possua uma elasticidade, nele é configurado o valor de 1 para as duas propriedades (flex-grow e flex-shrink). 
+                
+                * Mas lembrar que essas configurações (grow e shrink) nao sao valores binários. Pode ser colocados valores de 0, 1, 2, 3...mas é preciso verificar a proporção que eles vão crescer
 
                 */
                 
