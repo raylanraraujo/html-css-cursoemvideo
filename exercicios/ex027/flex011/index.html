@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flexbox</title>
+        <style>
+            div.container{
+                background-color: lightsalmon;
+
+                display: flex; /*isso configura o container como flexivel*/
+                flex-flow: row nowrap;
+            }
+
+            div.item{
+                background-color: lightblue;
+                border: 1px solid black;
+                text-align: center;
+
+                flex-basis: 250px;    
+            }
+
+            div#cxA{
+                flex-shrink: 0;
+                flex-grow: 1;  
+            }
+
+            div#cxB{ 
+                flex-shrink: 1;
+                flex-grow: 4;
+            }
+
+            div#cxC{
+                flex-shrink: 8;
+                flex-grow: 0;
+            }
+
+            /*
+            lembrar que essas configurações (grow e shrink) nao sao valores binários. Pode ser colocados valores de 0, 1, 2, 3...mas é preciso verificar a proporção que eles vão crescer. Se apenas um elento vai ter um valor diferente para o GROW, ele vai crescer como se tivesse colocado o valor de '1', pois não haveria uma proporção para ser avaliada. Assim como se colocasse o mesmo valor para todos os itens com o mesmo valor de GROW.
+            
+            Mas se, por exemplo, houver um elemento com GROW=1; e um valor de GROW=2; para outro elemento significa que o primeiro elemento vai ter um crescimento X enquanto que o outro vai ter um crescimento 2X em relação ao primeiro. 
+            
+            Esse mesmo princípio segue a lógica para o SHRINK
+            */
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="item" id="cxA">A</div>
+            <div class="item" id="cxB">B</div>
+            <div class="item" id="cxC">C</div>
+        
+        </div>
+    </body>
+</html>
