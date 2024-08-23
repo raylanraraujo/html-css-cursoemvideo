@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flexbox</title>
+        <style>
+            div.container{
+                background-color: lightsalmon;
+                display: flex; 
+                flex-flow: row nowrap;
+            }
+
+            div.item{
+                background-color: lightblue;
+                border: 1px solid black;
+                text-align: center;
+
+                ;    
+            }
+
+            div#cxA{
+               /* flex-shrink: 0;
+                flex-grow: 1;  
+                flex-basis: 200px */
+
+                flex: 1 0 200px;
+            }
+
+            div#cxB{ 
+                /*flex-shrink: 4;
+                flex-grow: 1;
+                flex-basis: 150px*/
+
+                flex: 1 4 150px;
+            }
+
+            div#cxC{
+               /* flex-shrink: 16;
+                flex-grow: 1;
+                flex-basis: auto */
+                flex: 1 16 auto;
+            }
+
+            /*
+            propriedade FLEX é um shorthand para "flex-grow + flex-shrink + flex-basis"
+            */
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="item" id="cxA">A</div>
+            <div class="item" id="cxB">B</div>
+            <div class="item" id="cxC">C</div>
+        
+        </div>
+    </body>
+</html>
